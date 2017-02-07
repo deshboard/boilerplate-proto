@@ -1,3 +1,11 @@
 syntax = "proto3";
 
 option go_package="proto";
+
+message Request {}
+
+message Response {}
+
+service Boilerplate {
+    rpc Method (Request) returns (Response);
+}
