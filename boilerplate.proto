@@ -8,4 +8,6 @@ message Response {}
 
 service Boilerplate {
     rpc Method (Request) returns (Response);
+
+    rpc StreamingMethod (Request) returns (stream Response);
 }
