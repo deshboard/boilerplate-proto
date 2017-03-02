@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package deshboard.boilerplate;
+package boilerplate;
 
 message Request {}
 
