@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-package boilerplate;
+package deshboard;
 
-message Request {}
+message BoilerplateRequest {}
 
-message Response {}
+message BoilerplateResponse {}
 
 service Boilerplate {
-    rpc Method (Request) returns (Response);
+    rpc Method (BoilerplateRequest) returns (BoilerplateResponse);
 
-    rpc StreamingMethod (Request) returns (stream Response);
+    rpc StreamingMethod (BoilerplateRequest) returns (stream BoilerplateResponse);
 }
