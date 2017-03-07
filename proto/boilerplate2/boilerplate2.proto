@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package boilerplate2;
+
+message BoilerplateRequest2 {}
+
+message BoilerplateResponse2 {}
+
+service Boilerplate2 {
+    rpc Method (BoilerplateRequest2) returns (BoilerplateResponse2);
+
+    rpc StreamingMethod (BoilerplateRequest2) returns (stream BoilerplateResponse2);
+}
